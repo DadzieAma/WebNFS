@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/styles.min.css') }}">
+</head>
+
+<body>
+    <div class="login-dark">
+        <form>
+            <h2 class="sr-only">Pi</h2>
+            <h5 class="text-center">This machine will be set as:</h5>
+            <div class="illustration"></div>
+            <div class="form-group">
+                <a href="server" class="btn btn-primary btn-block"> Server </a>
+                <a href="client" class="btn btn-primary btn-block"> Client </a>
+            </div>
+            <p class="text-monospace text-white forgot" href="#" style="margin:12px;">This application will set the machine to be in local shared network to be able to share files locally</p>
+            
+            <a href="about" style="text-decoration:none;">About</a>
+        </form>
+
+    </div>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
