@@ -107,7 +107,11 @@ def editHostsAllow(address):
         filename.close()
     return True
 
-
+##********************************************
+#Opening the directory
+def openfolder(directory):
+    cmd = "xdg-open " + directory
+    os.popen(cmd)
 
 ##
 ##
@@ -128,10 +132,10 @@ please take note of the directory from the user
 '''
 def editExports(dirname, address):
     filename = open('/etc/exports', 'a')
-    write = (dirname + "\t" + address + "/17" + "(rw,all_squash,subtree_check,anonuid=1001,anongid=1001)\n\n")
+    write = (dirname + "\t" + address + "/17" + "(rw,all_squash,subtree_check,anonuid=1001,anongid=1001)\n")
     cont = check(write,'/etc/exports')
     if cont:
-        return True
+        return
     else:
         filename.write(write)
         filename.close()

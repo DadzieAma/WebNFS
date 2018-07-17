@@ -14,7 +14,7 @@
         <form action="{{url_for('setClient',ip=ip,file=file, folder=folder)}}">
             <h3 class="text-center">Setting the Server</h3><br>
             <h5>Input the Server's IP</h5>
-            <input class="form-control is-invalid" type="text" name="ip" placeholder="For example: 10.10.3.72" method="post">
+            <input class="form-control is-invalid" type="text" name="ip" placeholder="For example: 10.10.3.72" method="post" required="True">
             <!--select class="form-control">
                 <optgroup label="Select the server" style="color:black;">
                     <option value="12" selected="">Server 1</option>
@@ -24,12 +24,12 @@
             </select-->
             <div class="form-group"></div>
     <h5>Full path of the Server's folder shared.</h5>
-    <input class="form-control is-invalid" type="text" name="file" placeholder="For example: /home/pi/media">
+    <input class="form-control is-invalid" type="text" name="file" placeholder="For example: /home/pi/media" required>
     
     <div class="form-group"></div>
     <h5>Choose the path you want to keep your folder.</h5>
     <div class="form-group">
-        <input class="form-control is-invalid" type="text" name="folder" placeholder="For example: /home/pi/Ama">
+        <input class="form-control is-invalid" type="text" name="folder" placeholder="For example: /home/pi/Ama" required>
         
     </div>
     <div class="form-group">

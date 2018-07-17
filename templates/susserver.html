@@ -11,13 +11,16 @@
 
 <body>
     <div class="login-dark">
-        <form>
+        <form action="{{url_for('serverfolder',file=file)}}" method="post">
             <h5> Succeeded!!!</h5> <hr style="background-color:white;" >
             <p> You have successfully set your machine as Server </p><br>
-            <p> Client's IP:  = {{ip}} </p>
-            <p> Folder's Shared: = {{file}} </p>
-            
-            
+            <p> Client's IP:  = {{ip}}</p>
+            <p> Folder's Shared: = {{file}}</p>
+            <p>Click OK to see the files shared</p>
+            <p hidden><input name='file'>{{file}}</p> 
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Ok </button>
+            </div>
             <a href="/" style="text-decoration:none;">Go to Index</a>
         </form>
 

@@ -11,13 +11,15 @@
 
 <body>
     <div class="login-dark">
-        <form>
+        <form action="{{url_for('clientfolder',folder=folder)}}" method="post">
             <h5> Succeeded!!!</h5> <hr style="background-color:white;" >
             <p> You have successfully connected to the Server </p><br>
             <p> Server's IP:  = {{ip}} </p>
-            <p> Change directory to {{folder}} to browse the shared files </p>
-            
-            
+            <p> Click OK to change directory to {{folder}} to browse the shared files </p>
+            <p hidden><input name='folder'>{{folder}}</p> 
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Ok </button>
+            </div>
             <a href="/" style="text-decoration:none;">Go to Index</a>
         </form>
 
@@ -27,3 +29,4 @@
 </body>
 
 </html>
+
