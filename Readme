@@ -3,16 +3,12 @@ Web NFS GUI for Debian
 Install
 Application written in Python.
 
-Open terminal and add the Python language support :
+Open terminal and add the Python3 language support :
 
-sudo Web_NFS_GUI
+sudo python3 myapp.py
 The dependancies for the Python language will be automatically installed.
 
-sudo apt install Web_NFS_GUI # <<< don't work
-Settings
-This app allow you to set a machine as a Client or as a Server in a local network, using the NFS protocol for Debian. This is a front-end for NFS, a GUI tool for NFS. In order to set a machine as Client/Server, you need to run this app as root, with sudo or gksudo for exemple.
-
-sudo Web_NFS_GUI
+sudo python3 myapp.py
 Setting the machine as Client
 Select the option Client
 Click on Client to find the Server
@@ -28,6 +24,12 @@ Select the IP of the Client
 Type the Full path of the Server's folder shared.
 Click on Set machine as Server to set your machine as server
 Rerun this procedure for each Client
+
+Sending to multiple Client
+Click on Server to find a Client
+Select the IP of the Client, You input *
+Type the Full path of the Server's folder shared.
+Click on Set machine as Server to set your machine as server
 
 What does this app do ?
 This application helps us to share files locally between two or more pi's.
