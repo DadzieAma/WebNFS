@@ -12,7 +12,8 @@
 <body>
     <div class="login-dark" >
         <form action="{{url_for('setClient',ip=ip,file=file, folder=folder)}}">
-            <h3 class="text-center">Select the Server</h3>
+            <h3 class="text-center">Setting the Server</h3><br>
+            <h5>Input the Server's IP</h5>
             <input class="form-control is-invalid" type="text" name="ip" placeholder="For example: 10.10.3.72" method="post">
             <!--select class="form-control">
                 <optgroup label="Select the server" style="color:black;">
