@@ -8,7 +8,7 @@ Open terminal and add the Python language support :
 sudo Web_NFS_GUI
 The dependancies for the Python language will be automatically installed.
 
-sudo apt install simple-nfs-gui # <<< don't work
+sudo apt install Web_NFS_GUI # <<< don't work
 Settings
 This app allow you to set a machine as a Client or as a Server in a local network, using the NFS protocol for Debian. This is a front-end for NFS, a GUI tool for NFS. In order to set a machine as Client/Server, you need to run this app as root, with sudo or gksudo for exemple.
 
